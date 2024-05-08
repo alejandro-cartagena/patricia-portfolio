@@ -126,7 +126,7 @@ nav ul li:not(:last-child) {
 }
 
 .hero__image__container {
-    background-color: red;
+    /* background-color: red; */
     aspect-ratio: 1 / 1.25;
     display: grid;
     align-items: end;
