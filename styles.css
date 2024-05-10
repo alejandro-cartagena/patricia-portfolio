@@ -83,11 +83,9 @@ nav ul li:not(:last-child) {
     margin-right: 2em;
 }
 
-.fa-bars {
-    display: none;
-}
 
-.off-screen-menu {
+
+.hidden {
     display: none;
 }
 
@@ -106,17 +104,25 @@ nav ul li:not(:last-child) {
         color: #FFB700;
     }
 
+    .fa-x {
+        cursor: pointer;
+        font-size: 2rem;
+        color: #FFB700;
+        position: absolute;
+        z-index: 100;
+        right: 1em;
+    }
+
     .off-screen-menu {
-        z-index: 20;
         color: #FFFFFF;
         display: block;
         background-color: #04091e;
         height: 100%;
         width: 100%;
-        max-width: 450px;
+        /* max-width: 450px; */
         position: fixed;
         top: -50px;
-        /* right: -450px; */
+        right: -100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -128,6 +134,10 @@ nav ul li:not(:last-child) {
 
     nav ul li a{
         color: #FFFFFF;
+    }
+
+    nav ul li a:hover {
+        background-color: #FFB700;
     }
 
     nav ul li:not(:last-child) {
